@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://assets.sogody.co.uk/newsapp/style.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>NewsApp</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="inner-header flex">
+        <img
+          class="logo"
+          src="https://cdn-icons-png.flaticon.com/512/56/56992.png"
+        />
+        <h1></h1>
+      </div>
+
+      <div>
+        <svg
+          class="waves"
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="parallax">
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="0"
+              fill="rgba(255,255,255,0.7"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="3"
+              fill="rgba(255,255,255,0.5)"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="48"
+              y="5"
+              fill="rgba(255,255,255,0.3)"
+            />
+            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+          </g>
+        </svg>
+      </div>
+      <div class="language-container">
+        <select class="language-dropdown">
+          <option value="en">🇬🇧 Eng</option>
+          <option value="sq">🇦🇱 Sq</option>
+        </select>
+      </div>
+    </header>
+
+    <main>
+      <div class="header-title">
+        <div class="title-search-container">
+          <div class="title-search">
+            <h1 data-translate="news">Latest News</h1>
+            <div class="search-container search-desktop">
+              <svg
+                class="search-icon"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M10 2a8 8 0 015.546 13.543l4.386 4.386-1.415 1.415-4.386-4.386A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"
+                />
+              </svg>
+              <input
+                data-translate-placeholder="search"
+                type="search"
+                class="search-input"
+                placeholder="Search articles..."
+              />
+            </div>
+          </div>
+          <div class="news-title"></div>
+        </div>
+        <div class="search-container search-mobile">
+          <svg
+            class="search-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M10 2a8 8 0 015.546 13.543l4.386 4.386-1.415 1.415-4.386-4.386A8 8 0 1110 2zm0 2a6 6 0 100 12 6 6 0 000-12z"
+            />
+          </svg>
+          <input
+            data-translate-placeholder="search"
+            type="search"
+            class="search-input"
+            placeholder="Search articles..."
+          />
+        </div>
+      </div>
+
+      <section class="articles-section"></section>
+      <div class="message-container">
+        <div class="no-data-message" data-translate="no-articles">
+          No articles found.
+        </div>
+        <div class="loading"></div>
+      </div>
+
+      <div class="pagination"></div>
+    </main>
+
+    <footer>
+      <p class="text-center">
+        Copyright &copy; <a href="https://sogody.com">sogody.com</a>
+      </p>
+    </footer>
+    <script src="https://assets.sogody.co.uk/newsapp/script.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
