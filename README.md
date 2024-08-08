@@ -1,6 +1,10 @@
 # News App
 
-This is a simple news application that fetches and displays news articles using the NewsData.io API.
+This is a simple news application built with vanilla JavaScript that fetches and displays news articles using the NewsData.io API.
+
+## Getting Started
+
+### Prerequisites
 
 To run this project, you need to have an API key from NewsData.io. If the application doesn't work, it might be due to an invalid API key.
 
